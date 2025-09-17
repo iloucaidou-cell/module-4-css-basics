@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CSS Fundamentals Demo</title>
+
+  <!-- Normalize (reset) goes before your stylesheet -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+  <!-- Your stylesheet -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <h1>CSS Fundamentals Demo</h1>
+    <nav>
+      <ul>
+        <li><a href="#selectors">Selectors</a></li>
+        <li><a href="#box">Box model</a></li>
+        <li><a href="#reset">Reset</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="selectors">
+      <h2>Selectors & Specificity</h2>
+      <p class="note">Styled via the <code>.note</code> class.</p>
+      <p id="special">This one has an <code>#id</code> so it wins if both apply.</p>
+    </section>
+
+    <section id="box">
+      <h2>Box sizing</h2>
+      <div class="row">
+        <div class="col content-box">content-box 50%</div>
+        <div class="col border-box">border-box 50%</div>
+      </div>
+    </section>
+
+    <section id="reset">
+      <h2>Reset in the head</h2>
+      <p>Normalize.css removes default browser margins so edges line up.</p>
+    </section>
+  </main>
+
+  <footer><small>&copy; 2025 Your Name</small></footer>
+</body>
+</html>
